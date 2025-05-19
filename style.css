@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #eaf7ff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #b3e5fc;
+}
+
+.scene {
+  position: relative;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.background {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.text-block {
+  margin: 2rem 0;
+}
+
+.boat {
+  width: 150px;
+  margin-top: 1rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+.boat2 {
+  animation-delay: 2s;
+}
+
+.boat3 {
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #c8e6c9;
+}
